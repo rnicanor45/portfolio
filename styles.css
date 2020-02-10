@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+p {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-size: 60px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Raleway';
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* button styling */
+
+.button {
+  font-family: 'Raleway';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  /* color: #00B67A; */
+  color: black;
+  padding: 20px 30px;
+  border-style: solid;
+  /* border-radius: 10px; */
+  border-width: 2px;
+  border-color: black;
+  transition: .5s ease;
+}
+
+.button:hover {
+  background-color: #00B67A;
+  border-color: #00B67A;
+  color: white;
+}
+
+/* header styling */
+
+header li, a {
+  color: #B4B4B4;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+  font-family: 'Raleway';
+  /* sticky header */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: black;
+}
+
+/* splash styling */
+
+.splash{
+  height: 100vh;
+  background-image: url("./images/splash_bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  text-align: left;
+}
+
+/* work samples */
+
+.work_1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 100px 10%;
+}
+
+/* #mybrightlink {
+  background-color: white;
+  max-width: 30%;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #F4EEEE;
+  transition: .5s ease;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center; 
+} */
+
+/* mybrightlink project */
+
+#mybrightlink {
+  flex: 1;
+}
+
+#mybrightlink a{
+  background-color: white;
+  /* max-width: 30%; */
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #F4EEEE;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  /* height: 200px; */
+}
+
+#mybrightlink img {
+  max-width: 60%;
+  /* padding: 20px; */
+}
+
+#mybrightlink a:hover {
+  transform: scale(1.05,1.05);
+  box-shadow: 0 10px 30px #F4EEEE;
+}
+
+#mybrightlink_text {
+  margin: 30px;
+  flex: 2;
+}
+
+#logo_design {
+  flex: 1;
+}
+
+/* logo design project */
+
+#logo_design a{
+  background-color: black;
+  /* max-width: 30%; */
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #F4EEEE;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  /* height: 200px; */
+}
+
+#logo_design img {
+  max-width: 60%;
+  /* padding: 20px; */
+}
+
+#logo_design a:hover {
+  transform: scale(1.05,1.05);
+  box-shadow: 0 10px 30px #F4EEEE;
+}
+
+#logo_design_text {
+  margin: 30px;
+  flex: 2;
+}
+
+/* soundcloud project */
+
+#soundcloud a{
+  background-color: #FF6A22;
+  /* max-width: 30%; */
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #F4EEEE;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  /* height: 200px; */
+}
+
+#soundcloud img {
+  max-width: 60%;
+  /* padding: 20px; */
+}
+
+#soundcloud a:hover {
+  transform: scale(1.05,1.05);
+  box-shadow: 0 10px 30px #F4EEEE;
+}
+
+#soundcloud_text {
+  margin: 30px;
+  flex: 2;
+}
+
+/* hitchrides project */
+
+#hitchrides a{
+  background-color: #59D9D0;
+  width: 100%;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #F4EEEE;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  /* height: 200px; */
+}
+
+#hitchrides img {
+  max-width: 60%;
+  /* padding: 20px; */
+}
+
+#hitchrides a:hover {
+  transform: scale(1.05,1.05);
+  box-shadow: 0 10px 30px #F4EEEE;
+}
+
+#hitchrides_text {
+  margin: 30px;
+  flex: 2;
+}
+
+/* footer */
+
+.footer p{
+  text-align: center;
+  margin: 30px 0;
+  color: lightgray
+}
+
+/* myBrightlink page*/
+
+#mybrightlink_project {
+  width: 100%;
+  padding-top: 98px;
+}
+
+/* logo design page*/
+
+#logo_design {
+  width: 100%;
+  padding-top: 98px;
+}
+
+/* soundcloud project*/
+
+#soundcloud_project {
+  width: 100%;
+  padding-top: 98px;
+}
+
+/* hitchrides project*/
+
+#HitchRides {
+  width: 100%;
+  padding-top: 98px;
+}
+
+/* About page */
+
+.wrapper {
+  display: flex;
+  padding: 200px 5%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.avatar img{
+  max-height: 300px ;
+  margin: 0 30px;
+}
+
+.about {
+  margin: 0 30px;
+}
+
+.about h3 {
+  font-weight: 700;
+}
